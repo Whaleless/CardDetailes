@@ -1,0 +1,227 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    display: flex;
+}
+
+.dynamic-section, .form-section {
+    position: relative;
+    height: 100%;
+}
+
+.dynamic-section {
+    width: 30%;
+    min-width: 375px;
+    background: url("images/bg-main-desktop.png");
+    background-size: 100% 100%;
+}
+
+.card-side {
+    position: absolute;
+    height: 245px;
+    width: 447px;
+}
+
+.front-side {
+    top: 20%;
+    right: -25%;
+    background: url("images/bg-card-front.png") no-repeat;
+}
+
+.card-logo {
+    position: absolute;
+    border-radius: 50px;
+}
+
+.card-logo.main {
+    top: 25px;
+    left: 30px;
+    width: 45px;
+    height: 45px;
+    background: white;
+}
+
+.card-logo.secondary {
+    top: 40px;
+    left: 95px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+}
+
+.dynamic-data {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+.dynamic-card-number {
+    bottom: 75px;
+    left: 30px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.dynamic-name {
+    bottom: 30px;
+    left: 30px;
+    font-size: 16px;
+}
+
+.dynamic-expiration-date {
+    bottom: 30px;
+    right: 35px;
+    font-size: 16px;
+}
+
+.back-side {
+    top: 50%;
+    right: -40%;
+    background: url("images/bg-card-back.png") no-repeat;
+}
+
+.dynamic-cvv {
+    top: 112px;
+    right: 55px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-left: 155px;
+}
+
+.card-details-form {
+    width: 380px;
+}
+
+.caption {
+    display: block;
+    width: 150px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.input-field {
+    height: 40px;
+    padding: 0 15px;
+    margin: 10px 0 30px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    color: hsl(279, 6%, 55%);
+    border: 1px solid #d0d0d0;
+    border-radius: 7px;
+    outline: none;
+    transition-duration: .2s;
+}
+
+.input-field:focus {
+    border: 1px solid hsl(279, 6%, 55%);
+}
+
+.input-field::placeholder {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    color: #d0d0d0;
+}
+
+.input-field:focus::placeholder {
+    opacity: 0;
+}
+
+.input-field.number, .input-field.name {
+    width: 100%;
+}
+
+.expiration-block {
+    display: inline-block;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.input-field.year, .input-field.month {
+    width: 60px;
+    margin-bottom: 40px;
+}
+
+.input-field.month {
+    margin-right: 10px;
+}
+
+.cvv-block {
+    display: inline-block;
+    width: 155px;
+}
+
+.input-field.cvv {
+    width: 100%;
+}
+
+.submit-button {
+    position: relative;
+    box-sizing: border-box;
+    width: 108%;
+    height: 50px;
+    background: hsl(278, 68%, 11%);
+    border-radius: 7px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition-duration: .3s;
+}
+
+.submit-button:hover {
+    background: hsl(278, 69%, 17%);
+}
+
+.submit-button:active {
+    background: hsl(278, 70%, 24%);
+}
+
+@media (max-width: 990px) {
+    body {
+        flex-direction: column;
+    }
+
+    .dynamic-section {
+        width: 100%;
+        background: url("images/bg-main-mobile.png") no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .front-side {
+        left: 10%;
+        top: 60%;
+        z-index: 2;
+    }
+
+    .back-side {
+        left: 25%;
+        top: 30%;
+    }
+
+    .form-section {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 100px;
+    }
+
+    .card-details-form {
+        margin-left: -30px;
+    }
+}

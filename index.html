@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/credit-card.png">
+</head>
+<body>
+    <section class="dynamic-section">
+        <div class="front-side card-side">
+            <div class="main card-logo"></div>
+            <div class="secondary card-logo"></div>
+            <div class="front-dynamic-data">
+                <p class="dynamic-card-number dynamic-data">0000 0000 0000 0000</p>
+                <p class="dynamic-name dynamic-data">Jane Appleseed</p>
+                <p class="dynamic-expiration-date dynamic-data">00/00</p>
+            </div>
+        </div>
+        <div class="back-side card-side">
+            <div class="back-dynamic-data">
+                <p class="dynamic-cvv dynamic-data">000</p>
+            </div>
+        </div>
+    </section>
+    <section class="form-section">
+        <form class="card-details-form">
+            <label class="caption" for="name">Cardholder Name</label>
+            <input type="text" name="name" id="name" class="name input-field" maxlength="30" placeholder="e.q. Jane Appleseed">
+
+            <label class="caption" for="number">Card Number</label>
+            <input type="text" name="number" id="number" class="number input-field" maxlength="19" placeholder="e.g. 0000 0000 0000 0000">
+
+            <div class="expiration-block">
+                <label class="caption" for="month">Exp. Date (MM/YY)</label>
+                <input type="text" name="month" id="month" class="date month input-field" maxlength="2" placeholder="00">
+                <input type="text" name="year" id="year" class="date year input-field" maxlength="2" placeholder="00">
+            </div>
+
+            <div class="cvv-block">
+                <label class="caption" for="cvv">CVV</label>
+                <input type="text" name="cvv" id="cvv" class="cvv input-field" maxlength="3" placeholder="e.g. 000">
+            </div>
+
+            <button type="submit" class="submit-button">Confirm</button>
+        </form>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
