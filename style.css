@@ -234,13 +234,6 @@ body {
 @media (min-width: 791px) and (max-width: 990px) {
     .card-details-form {
         margin-left: -30px;
-        transform: scale(110%);
-    }
-}
-
-@media (max-width: 790px) {
-    .card-details-form {
-        margin-left: -30px;
         transform: scale(150%);
     }
 }
