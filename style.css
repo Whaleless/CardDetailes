@@ -234,6 +234,6 @@ body {
 @media (min-width: 791px) and (max-width: 990px) {
     .card-details-form {
         margin-left: -30px;
-        transform: scale(150%);
+        transform: scale(180%);
     }
 }
