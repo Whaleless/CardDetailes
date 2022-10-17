@@ -339,6 +339,10 @@ body {
 @media (min-width: 791px) and (max-width: 990px) {
     .card-details-form {
         margin-left: -30px;
-        transform: scale(155%);
+        transform: scale(175%);
+    }
+
+    .success-status {
+        transform: scale(175%);
     }
 }
