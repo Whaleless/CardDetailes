@@ -31,12 +31,14 @@
     </section>
     <section class="form-section">
         <form class="card-details-form">
-            <label class="caption" for="name">Cardholder Name</label>
-            <input type="text" name="name" id="name" class="name input-field" maxlength="30" placeholder="e.q. Jane Appleseed">
-
-            <label class="caption" for="number">Card Number</label>
-            <input type="text" name="number" id="number" class="number input-field" maxlength="19" placeholder="e.g. 0000 0000 0000 0000">
-
+            <div class="nameBlock">
+                <label class="caption" for="name">Cardholder Name</label>
+                <input type="text" name="name" id="name" class="name input-field" maxlength="30" placeholder="e.q. Jane Appleseed">
+            </div>
+            <div class="numberBlock">
+                <label class="caption" for="number">Card Number</label>
+                <input type="text" name="number" id="number" class="number input-field" maxlength="19" placeholder="e.g. 0000 0000 0000 0000">
+            </div>
             <div class="expiration-block">
                 <label class="caption" for="month">Exp. Date (MM/YY)</label>
                 <input type="text" name="month" id="month" class="date month input-field" maxlength="2" placeholder="00">
@@ -50,6 +52,13 @@
 
             <button type="submit" class="submit-button">Confirm</button>
         </form>
+
+        <div class="success-status hidden">
+            <img src="images/icon-complete.svg" width="80" height="80">
+            <h2 class="success-title">Thank you!</h2>
+            <p class="success-description">We've added your card details</p>
+            <button class="continue-button">Continue</button>
+        </div>
     </section>
 </body>
 <script src="script.js"></script>
